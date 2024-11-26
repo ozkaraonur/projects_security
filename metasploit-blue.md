@@ -14,6 +14,7 @@ The Blue lab focuses on exploiting the EternalBlue vulnerability (MS17-010) on W
 
   - Metasploit Framework: For EternalBlue exploitation.
   - Nmap: For SMB service detection and scanning.
+  - John: For cracking user password's hash..
 
 ## Steps
 
