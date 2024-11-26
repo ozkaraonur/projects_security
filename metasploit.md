@@ -1,37 +1,38 @@
-# Metasploit Labs
+# Blue
 
-This repository contains documentation and steps for three TryHackMe labs: Metasploit Exploitation, Meterpreter, and Blue (EternalBlue Exploit). Each lab focuses on different aspects of penetration testing and post-exploitation.
+## Objective
 
-## Table of Contents
-- Metasploit Exploitation
-- Meterpreter
-- Blue (EternalBlue Exploit)
-
-## Metasploit Exploitation
-
-### Objective
-
-The Metasploit Exploitation lab focuses on understanding and applying the Metasploit Framework to exploit common vulnerabilities. It simulates real-world attack scenarios for hands-on experience in reconnaissance, exploitation, and post-exploitation.
+The Blue lab focuses on exploiting the EternalBlue vulnerability (MS17-010) on Windows machines. It emphasizes understanding SMBv1 vulnerabilities and securing systems against them.
 
 ### Skills Learned
 
-- Reconnaissance and vulnerability scanning techniques.
-- Exploiting vulnerabilities using Metasploit modules.
-- Payload generation and deployment for system access.
-- Ethical hacking methodologies.
+  - SMB protocol analysis and exploitation.
+  - Understanding EternalBlue vulnerability (MS17-010).
+  - Methods for securing Windows systems.
 
 ### Tools Used
 
-- Metasploit Framework: Exploit development and execution.
-- Nmap: Network scanning and vulnerability detection.
+  - Metasploit Framework: For EternalBlue exploitation.
+  - Nmap: For SMB service detection and scanning.
 
 ## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
 
-Every screenshot should have some text explaining what the screenshot is about.
+1. Detect SMBv1 Services
 
-Example below.
+   - Scan the target machine for SMB services:
+![Screenshot_2024-11-26_20_56_32(1)](https://github.com/user-attachments/assets/8e6b9b92-4521-4a52-ac9c-80bde9e85d4c)
 
-*Ref 1: Network Diagram*
+2. Exploit Execution
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   - Execute the EternalBlue exploit:
+   ![yyyy(1)](https://github.com/user-attachments/assets/b4b3488c-83ac-4cb1-89d3-1366508ae7f0)
+
+
+
+3. Post-Exploitation
+
+   - Extract system details and escalate privileges:
+    ![hAHSUYMNP](https://github.com/user-attachments/assets/174d446f-1f96-413f-b743-58082f8b749b)
+    ![JOHN](https://github.com/user-attachments/assets/cdaf96b9-dfa9-4296-aead-09f785a8dd44)
+    ![flag](https://github.com/user-attachments/assets/b3b24c8e-9f00-469d-a1c5-608e2fe0c5bc)
+
